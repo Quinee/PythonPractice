@@ -1,0 +1,10 @@
+# Find Number of Occurences of each letter from a String using dictionary
+
+dictionary={}
+name='mississippi'
+
+for letter in name:
+    dictionary[letter]=dictionary.get(letter,0)+1
+
+for key,value in dictionary.items():
+    print(key,"\t",value)

@@ -1,0 +1,12 @@
+# Find Number of Occurences of each vowel from a String using dictionary
+
+name='Quinee'
+dictionary={}
+vowels={'a','e','i','o','u'}
+
+for letter in name:
+    if letter in vowels:
+        dictionary[letter]=dictionary.get(letter,0)+1
+
+for key,value in sorted(dictionary.items()):
+    print(key,"\t",value)

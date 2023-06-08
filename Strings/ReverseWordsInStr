@@ -1,0 +1,16 @@
+# Reverse Words in String
+
+def reverseWords(string):
+    print('Original str is ',string)
+    str_split=string.split()
+    len_str=len(str_split)-1 #2
+    output=[]
+    while len_str>=0:
+        output.append(str_split[len_str])
+        len_str-=1
+    print('Reversed is ',' '.join(output))
+
+
+reverseWords('My name is Quinee')
+
+    
